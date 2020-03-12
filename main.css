@@ -1,11 +1,10 @@
 /* Colors */
 :root {
-  --black: #000000;
-  --umber: #656b46;
-  --rawUmber: #8a6946;
-  --beaver: #9d8065;
-  --dustStorm: #e1d0bc;
-  --airSuperiorityBlue: #78a1bb;
+  --darkGunmetal: #122932;
+  --blackCoral: #576066;
+  --queenBlue: #386fa4;
+  --middleBlue: #80ced7;
+  --mintCream: #f7fff7;
 }
 
 * {
@@ -19,7 +18,7 @@ html {
 }
 
 body {
-  font-family: "Roboto Slab", serif;
+  font-family: "Roboto", sans-serif;
   font-size: 18px;
   line-height: 1.5;
   min-height: 400px;
@@ -35,8 +34,7 @@ main {
 
 nav {
   padding: 0 10px 0 10px;
-  background-color: #78a1bb;
-  color: white;
+  background-color: var(--darkGunmetal);
 }
 
 .navigation_list {
@@ -55,9 +53,8 @@ nav {
 li a {
   display: block;
   padding: 8px;
-  color: black;
+  color: var(--middleBlue);
   text-decoration: none;
-  font-weight: bolder;
 }
 nav {
   position: fixed;
@@ -70,10 +67,12 @@ nav {
 /* Banner */
 
 .hero {
-  height: 100vh;
-  background-image: url(https://images.unsplash.com/photo-1554592977-9fcccf7b4e25?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80);
-  background-repeat: no-repeat;
-  background-size: cover;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 40vh;
+  background-color: grey;
 }
 
 .app_name {
@@ -82,54 +81,29 @@ nav {
   text-align: center;
 }
 
-.hero_tag {
-  font-size: 1em;
-  padding: 15px 15px 15px 15px;
-  color: white;
+/* Homepage */
+
+.tag {
   text-align: center;
-  width: fit-content;
-  margin-left: auto;
-  margin-right: auto;
+  margin-top: 15px;
+  font-size: 0.8em;
+  margin-top: 10px;
 }
 
-label {
-  color: white;
+.state_selection {
   width: 90%;
-  margin-right: auto;
-  margin-left: auto;
+  color: black;
+  margin: 15px auto 15px auto;
 }
 
-#state {
-  width: 90%;
-  height: 50px;
+h1 {
   text-align: center;
-  color: var(--black);
-  font-size: 1rem;
-  background: var(--dustStorm);
-  border: none;
-  font-weight: bold;
-  margin: 5px 0 5px 0;
-  border: 1px inset var(--black);
-  margin-left: auto;
-  margin-right: auto;
+  font-size: 1.5em;
 }
 
-.hero-text-container {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  height: 100%;
-  background-color: #00000098;
-}
+/* Homepage park cards */
 
-/* Homepage Idea Cards */
-
-.ideas {
-  height: 100%;
-  margin-bottom: 40px;
-}
-
-.card_container {
+.featured_parks {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
@@ -137,53 +111,33 @@ label {
   padding: 15px;
 }
 
-.idea_card {
+.park_card {
   display: block;
-  margin: 15px 0px 15px 0px;
-  height: 250px;
+  height: 300px;
   width: 300px;
   background: white;
   border: black solid 2px;
-  position: relative;
+  box-shadow: 2px 2px 2px black;
 }
 
-.project_info {
-  display: flex;
-  justify-content: center;
-  justify-content: space-evenly;
-  height: 25px;
-  background-color: black;
-  color: white;
-  position: absolute;
-  top: 0;
-  width: 100%;
-}
-
-.card_title {
+.pc_designation {
   text-align: center;
-  padding: 0px 10px 0px 10px;
-  margin-top: 40px;
+  color: white;
+  padding: 5px;
+  background-color: black;
 }
 
-.card_content {
-  margin: 5px auto 5px auto;
-  text-align: left;
+.pc_name {
+  text-align: center;
   padding: 10px;
 }
 
-.card_vote {
-  display: flex;
-  justify-content: center;
-  justify-content: space-evenly;
-  height: 25px;
-  background-color: black;
-  color: white;
-  position: absolute;
-  bottom: 0;
-  width: 100%;
+.pc_description {
+  text-align: left;
+  padding: 5px;
 }
 
-/* IDEA Page */
+/* Park Page */
 
 .idea_page_header {
   position: relative;

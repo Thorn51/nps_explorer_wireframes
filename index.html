@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <link rel="stylesheet" type="text/css" href="main.css" />
     <link
-      href="https://fonts.googleapis.com/css?family=Cormorant&display=swap"
+      href="https://fonts.googleapis.com/css?family=Roboto&display=swap"
       rel="stylesheet"
     />
     <link
@@ -24,11 +24,13 @@
     </nav>
     <!-- HERO -->
     <div class="hero" role="banner">
-      <div class="hero-text-container">
-        <h1 class="app_name">National Parks Explorer</h1>
-        <h3 class="hero_tag">
-          Find a national park to explore...
-        </h3>
+      <h1 class="app_name">National Parks Explorer</h1>
+    </div>
+    <main>
+      <h3 class="tag">
+        Find a national park to explore...
+      </h3>
+      <div class="state_selection">
         <label for="states">Select a State:</label>
         <select name="states" id="state">
           <option value="AL">Alabama</option>
@@ -84,13 +86,19 @@
           <option value="WY">Wyoming</option>
         </select>
       </div>
-      <div class="invalid-search-area" role="alert" hidden>
-        <h2>
-          A problem has occurred. Please check that you have internet access. If
-          you do, please enter a valid search using a city, state, or zip code.
-        </h2>
-      </div>
-    </div>
-    <main></main>
+      <section class="featured_parks">
+        <h1 class="state">Alabama</h1>
+        <div class="park_card">
+          <h5 class="pc_designation">National Monument</h5>
+          <h3 class="pc_name">Brimingham Civil Rights</h3>
+          <p class="pc_description">
+            In 1963, images of snarling police dogs unleashed against
+            non-violent protesters and of children being sprayed with
+            high-pressure hoses appeared in print and television news around the
+            world. These dramatic scenes of violent police aggression...
+          </p>
+        </div>
+      </section>
+    </main>
   </body>
 </html>
