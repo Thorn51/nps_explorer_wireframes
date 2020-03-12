@@ -6,7 +6,7 @@ This is a series of wireframes for the various pages in the application.
 
 This will be an application that takes advantage of the [National Park Service API](https://www.nps.gov/subjects/digital/nps-data-api.htm). Users will be able to search by state to discover National Parks in their area. This will connect people to their National Parks and provide users a quick way to access information on outdoor recreation opportunities. The application will allow users to create a profile, rate parks, and comment on their experience at the various locations. This set of features is just a starting place, the MVP, of an application that could build a full social application around outdoor recreation.
 
-## ## Screen Inventory
+## Screen Inventory
 
 ### Navigation (component)
 
