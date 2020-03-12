@@ -25,9 +25,67 @@
     <!-- HERO -->
     <div class="park_hero">
       <div class="title_container">
-        <h1 class="park_name"></h1>
+        <h1 class="park_name">Birmingham         Civil Rights</h1>
       </div>
     </div>
-    <main></main>
+    <main>
+      <section class="tag">
+        <h3 class="tag_text">
+          National Monument
+        </h3>
+      </section>
+      <section class="user_interactions">
+        <i class="material-icons">favorite_border</i>
+      </section>
+      <section class="park_details">
+        <h2>About</h2>
+        <p>
+          In 1963, images of snarling police dogs unleashed against non-violent
+          protesters and of children being sprayed with high-pressure hoses
+          appeared in print and television news around the world. These dramatic
+          scenes of violent police aggression against civil rights protesters in
+          Birmingham, Alabama were vivid examples of segregation and racial
+          injustice in America.
+        </p>
+        <h2>Location</h2>
+        <address>
+          1510 5th Ave N, Birmingham, AL 35203
+        </address>
+        <map>
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4704.3277650216405!2d-86.81691420977171!3d33.515370263197426!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88891b8e803768cd%3A0x926656c6bbb6b76!2sBirmingham%20Civil%20Rights%20National%20Monument!5e0!3m2!1sen!2sus!4v1584030344449!5m2!1sen!2sus"
+            width="100%"
+            height="450"
+            frameborder="0"
+            style="border:0;"
+            allowfullscreen=""
+            aria-hidden="false"
+            tabindex="0"
+          ></iframe>
+        </map>
+      </section>
+      <section class="user_feedback">
+        <h2>Comments</h3>
+        <div class="comment">
+            <p class="user">John D.</p>
+            <p class="comment_text">
+                "...Returning violence for violence multiplies violence, adding deeper darkness to a night already devoid of stars. Darkness cannot drive out darkness; only light can do that. Hate cannot drive out hate; only love can do that." -Martin Luther King Jr.
+            </p>
+            </div>
+        <form class="comment_form">
+            <p>You are required to be logged in to submit comments</p>
+            <hr />
+            <label for="comment">Leave your thoughts for ${park.name}</label>
+            <textarea
+                name="comment"
+                cols="30"
+                rows="15"
+                class="comment"
+                id="comment"
+            ></textarea>
+            <button type="submit" class="form_button">Submit</button>
+        </form>
+      </section>
+    </main>
   </body>
 </html>
