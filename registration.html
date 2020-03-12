@@ -13,7 +13,7 @@
       href="https://fonts.googleapis.com/icon?family=Material+Icons"
       rel="stylesheet"
     />
-    <title>NPS Explorer - Landing Page Wireframe</title>
+    <title>NPS Explorer - Registration Wireframe</title>
   </head>
   <body>
     <nav>
@@ -28,6 +28,59 @@
         <h1 class="app_name">National Parks Explorer</h1>
       </div>
     </div>
-    <main></main>
+    <main>
+      <form class="registration_form">
+        <h2 class="section_title">Register</h2>
+        <hr />
+        <label for="registration_first_name">First Name:</label>
+        <input
+          type="text"
+          name="first_name"
+          id="registration_first_name"
+          placeholder="Enter First Name"
+          required
+        />
+        <label for="registration_last_name">Last Name:</label>
+        <input
+          type="text"
+          name="last_name"
+          id="registration_last_name"
+          placeholder="Enter Last Name"
+          required
+        />
+        <label for="registration_email">Email:</label>
+        <input
+          type="text"
+          placeholder="Enter Email"
+          name="email"
+          id="registration_email"
+          required
+        />
+        <label for="registration_password">Password:</label>
+        <input
+          type="password"
+          placeholder="Enter Password"
+          name="password"
+          id="registration_password"
+          required
+        />
+        <label for="registration_repeat_password">Repeat Password:</label>
+        <input
+          type="password"
+          name="repeat_password"
+          id="registration_repeat_password"
+          placeholder="Repeat Password"
+          required
+        />
+        <button type="submit" class="form_button">Register</button>
+      </form>
+      <div class="form_redirect">
+        <hr />
+        <p>
+          Do you already have an account? Visit the
+          <a href="#login">login page</a>.
+        </p>
+      </div>
+    </main>
   </body>
 </html>
