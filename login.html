@@ -28,6 +28,35 @@
         <h1 class="app_name">National Parks Explorer</h1>
       </div>
     </div>
-    <main></main>
+    <main>
+      <form class="login_form">
+        <h2 class="section_title">Login</h2>
+        <hr />
+        <label for="login_email">Email:</label>
+        <input
+          type="text"
+          placeholder="Enter Email"
+          name="email"
+          id="login_email"
+          required
+        />
+        <label for="login_password">Password:</label>
+        <input
+          type="password"
+          placeholder="Enter Password"
+          name="password"
+          id="login_password"
+          required
+        />
+        <button type="submit" class="form_button">Login</button>
+      </form>
+      <div class="form_redirect">
+        <hr />
+        <p>
+          Do you need to create an account? Visit the
+          <a href="#registration">registration page</a>.
+        </p>
+      </div>
+    </main>
   </body>
 </html>
