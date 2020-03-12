@@ -123,6 +123,7 @@ li a {
   display: block;
   height: 300px;
   width: 300px;
+  margin-top: 10px;
   background: white;
   border: var(--darkGunmetal) solid 2px;
   box-shadow: 2px 2px 2px black;
