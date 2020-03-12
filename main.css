@@ -5,6 +5,7 @@
   --queenBlue: #386fa4;
   --middleBlue: #80ced7;
   --mintCream: #f7fff7;
+  --platinum: #e0e2e3;
 }
 
 * {
@@ -23,6 +24,7 @@ body {
   line-height: 1.5;
   min-height: 400px;
   margin-bottom: 50px;
+  background-color: var(--platinum);
 }
 
 main {
@@ -33,7 +35,9 @@ main {
 /* Navigation */
 
 nav {
-  padding: 0 10px 0 10px;
+  position: fixed;
+  width: 100%;
+  padding: 0 5px 0 5px;
   background-color: var(--darkGunmetal);
 }
 
@@ -53,30 +57,31 @@ nav {
 li a {
   display: block;
   padding: 8px;
-  color: var(--middleBlue);
+  color: var(--mintCream);
   text-decoration: none;
-}
-nav {
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-  z-index: 10;
 }
 
 /* Banner */
-
 .hero {
-  position: relative;
   display: flex;
   flex-direction: column;
   justify-content: center;
   height: 40vh;
-  background-color: grey;
+  background-image: url(https://images.unsplash.com/photo-1554592977-9fcccf7b4e25?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.title_container {
+  display: flex;
+  align-items: center;
+  height: 100%;
+  background-color: #12293280;
 }
 
 .app_name {
-  color: white;
+  padding: 30px 0px 0px 0px;
+  color: var(--mintCream);
   font-size: 1.5em;
   text-align: center;
 }
@@ -84,19 +89,22 @@ nav {
 /* Homepage */
 
 .tag {
+  height: 40px;
+  padding: 5px;
+  background-color: var(--darkGunmetal);
+  color: var(--mintCream);
   text-align: center;
-  margin-top: 15px;
-  font-size: 0.8em;
-  margin-top: 10px;
+  font-size: 1em;
+  font-weight: lighter;
 }
 
 .state_selection {
   width: 90%;
-  color: black;
+  color: var(--darkGunmetal);
   margin: 15px auto 15px auto;
 }
 
-h1 {
+.selected_state {
   text-align: center;
   font-size: 1.5em;
 }
@@ -116,7 +124,7 @@ h1 {
   height: 300px;
   width: 300px;
   background: white;
-  border: black solid 2px;
+  border: var(--darkGunmetal) solid 2px;
   box-shadow: 2px 2px 2px black;
 }
 
@@ -124,7 +132,7 @@ h1 {
   text-align: center;
   color: white;
   padding: 5px;
-  background-color: black;
+  background-color: var(--darkGunmetal);
 }
 
 .pc_name {
